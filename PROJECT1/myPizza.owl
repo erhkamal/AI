@@ -1,0 +1,399 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl>
+
+
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase>
+
+    
+ObjectProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#doesNotContain>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount>
+
+    
+ObjectProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#doesNotContain>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping>
+    
+    
+ObjectProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness>
+
+    
+ObjectProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin>
+
+    
+DataProperty: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThisName>
+
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy2Get1>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Discount>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheesyVegetableTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheeseTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Medium>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Spiciness>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MuttonTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#FarmHousePizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#India>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MushroomTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy1Get1>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CapsicumTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OnionTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#StuffedCrustBase>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThinCrustBase>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OliveTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Hot>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThinCrustBase>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaBase>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#SohoPizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OliveTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Low>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy1Get1>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ParmesanTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CapsicumTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Low>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Spiciness>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheapPizza>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+         and (<http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#doesNotContain> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>)
+         and (<http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#doesNotContain> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>)
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaBase>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheeseTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>
+
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Discount>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Spiciness>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PaneerTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Italy>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Nationality>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OnionTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CapsicumTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VeggiePizza>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+         and (<http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>)
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#HamTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Hot>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Spiciness>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThinCrustPizza>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+         and (<http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThinCrustBase>)
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ParmesanTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ChickenTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#SimplyCheesePizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy1Get1>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#doesNotContain> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Low>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheeseTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#doesNotContain> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OliveTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#AmericanPizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#America>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Medium>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PepperoniTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy1Get1>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MushroomTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PaneerMakhaniPizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PaneerTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#StuffedCrustBase>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CapsicumTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy2Get1>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#India>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Hot>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OnionTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#StuffedCrustPizza>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+         and (<http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#StuffedCrustBase>)
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#America>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Nationality>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#SpicyChickenPizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#StuffedCrustBase>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ChickenTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#OnionTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#India>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Hot>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CapsicumTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy2Get1>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheeseTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PepperoniTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheeseTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#VegetableTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MargheritaPizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#NamedPizza>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy2Get1>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin> only <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Italy>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Medium>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#TomatoTopping>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MozzarellaTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#CheeseTopping>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#India>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Nationality>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Nationality>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Buy1Get1>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Discount>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatyPizza>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+         and (<http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#MeatTopping>)
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#StuffedCrustBase>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaBase>
+    
+    
+Class: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasPlaceOfOrigin> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Nationality>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasSpiciness> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Spiciness>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaDomainConcept>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasDiscount> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Discount>,
+        <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase> some <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaBase>
+    
+    
+Individual: <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThisPizza>
+
+    Facts:  
+     <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasTopping>  <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThisPizza>,
+     <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#hasBase>  <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThisPizza>,
+     <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#ThisName>  "MyPizza"
+    
+    
+DisjointClasses: 
+    <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#Pizza>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaBase>, <http://www.semanticweb.org/kamal/ontologies/2015/8/myPizza.owl#PizzaTopping>
+
